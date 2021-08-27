@@ -1,7 +1,8 @@
 // These are the imports for components
 import './App.css';
 import Home from './Home';
-import PlantList from './PlantList'
+import PlantList from "./PlantList"
+import User from './User';
 
 // These are the imports for functionality
 import { useState, useEffect} from "react"
@@ -10,10 +11,21 @@ import {Switch, Route} from 'react-router-dom'
 
 
 
+
 // Main APP
 function App() {
+  // users 
+  const [userData, setUserData] = useState([]); 
+  useEffect(() => {
+  fetch("http://localhost:9292/users")
+  .then((r) => r.json())
+  .then((data) => setUserData(data))
+  },[])
 
   
+ 
+ 
+ // plants  
 const [data, setData] = useState([]); 
 useEffect(() => {
 fetch("http://localhost:9292/plants")
@@ -22,11 +34,16 @@ fetch("http://localhost:9292/plants")
 },[])
  
 
-  return (
+
+return (
 <BrowserRouter>
+<div id="clock">
+
+</div>
+{ userData !== [] && <User userData={userData} />}
   <Switch>
     <Route path="/plants">
-      <PlantList data={data}/>
+      <PlantList data={data} userData={userData}/>
         </Route>
           <Route exact path="/">
         <Home />
@@ -39,8 +56,3 @@ fetch("http://localhost:9292/plants")
 
 export default App;
 
-
-
-// import Header from "./Header"
-// import logo from './logo.svg';
-// import PlantList from './PlantList'

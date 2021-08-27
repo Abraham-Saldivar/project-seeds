@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -77,4 +78,120 @@ body {
     display: block;
     margin-bottom: 20px;
   }
+}
+
+#home-id{
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace;
+  color: grey;
+}
+
+
+html{
+  background-color: blanchedalmond;
+}
+
+#user-id{
+  font-size: 20px;
+  font-family: monospace;
+  color: darkslategray;
+  margin: 1px;
+  padding-left: 275px;
+  background-color: burlywood;;
+
+}
+#clock{
+  font-family: monospace;
+  font-size: 20px;
+  background-color: darkslategrey;
+  color: wheat;
+  text-align: left;
+  background-color: darkslategrey;
+}
+
+
+#plant-link{
+  background-color: burlywood;
+  border: 1px;
+  border-color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-family: monospace;
+}
+#plant-link:hover, #plant-link:active {
+    background-color: brown;
+}
+#word-link{
+  color:white
+}
+#plant-list-color{
+  background-color: blanchedalmond;
+}
+
+#plant-img{
+  width: 260px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+#buttons{
+  padding: 10px;
+}
+
+#plant-grid{
+  padding-right: 80px;
+  float: right;
+  padding-left: 80px;
+}
+#plant-names{
+  font-size: 15px;
+  font-family: monospace;
+  color: darkslategray;
+  padding-left: 0px;
+}
+#change{
+  font-family: monospace;
+  font-size: 20px;
+  color: darkslategray;
+  text-align: center;
+ 
+}
+
+#home-link{
+  background-color: burlywood;
+  border: 1px;
+  border-color: black;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: monospace;
+
+}
+
+#home-link:hover, #home-link:active {
+  background-color: brown;
+}
+
+#my-fav{
+  font-family: monospace;
+  font-size: 20px;
+  color: darkslategray;
+  text-align: center;
+ 
+}
+#fav-fav{
+  font-family: monospace;
+  font-size: 20px;
+  color: darkslategray;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#descript{
+  box-sizing: content-box;
+  width: 100%;
 }

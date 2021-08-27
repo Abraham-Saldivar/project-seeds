@@ -1,7 +1,7 @@
 
 function PlantDescription({data}){
     return (
-    <p>{data.description}</p>
+    <p id="descript">{data.description}</p>
     )
 }
 
